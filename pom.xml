@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.nimbleways</groupId>
-    <artifactId>kata</artifactId>
+    <groupId>com.gildedrose</groupId>
+    <artifactId>gilded-rose-kata</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
