@@ -14,4 +14,4 @@ Quand on veut ajouter le traitement d'un autre Item
 il suffit d'ajouter la Classe `Conjured implements IUpdate` apres on manipule la methode update selon le genre de traitement
 
 
-<img src="img.png" width="1000"/>
+<img src="https://res.cloudinary.com/drmmqpbsw/image/upload/v1649275096/img_rtjuim.png" width="1000"/>
