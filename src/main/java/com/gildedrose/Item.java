@@ -11,7 +11,9 @@ public class Item {
     public Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
-        this.quality = quality;
+        if(quality >0 && quality <50){
+            this.quality = quality;
+        }
     }
 
    @Override
