@@ -7,9 +7,47 @@ class GildedRose {
         this.items = items;
     }
 
-    public void updateQuality() {
+    public boolean  qualityNegative(Item item)
+    {
+        if(item.quality<0)return true;
+        return false;
+    }
+
+    public void AgedBrie(Item item)
+    {
+        if(item.sellIn<11)item.quality++;
+    }
+
+    public void Traitement() {
         for (int i = 0; i < items.length; i++) {
-            if (!items[i].name.equals("Aged Brie")
+
+            if (this.qualityNegative(items[i])) {
+                System.out.println("erreur qualité negative de l'item " + items[i].name);
+            } else {
+                String choix = items[i].name;
+                switch (choix) {
+
+                    case "Sulfuras":
+
+                        break;
+                    case "Backstage passes to a TAFKAL80ETC concert":
+                        items[i].quality = 0;
+                        break;
+
+
+                    default:
+
+                        break;
+
+
+                }
+            }
+        }
+    }
+
+    public void updateQuality(int i) {
+
+           if (!items[i].name.equals("Aged Brie")
                     && !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (items[i].quality > 0) {
                     if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
@@ -56,7 +94,7 @@ class GildedRose {
                         items[i].quality = items[i].quality + 1;
                     }
                 }
-            }
+
         }
     }
 }
