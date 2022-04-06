@@ -7,6 +7,7 @@ class GildedRose {
         this.items = items;
     }
 
+    //RIDA EL BARDAI
     public void updateQuality(){
         //on parcour la liste des items
         for (Item item :
@@ -26,16 +27,14 @@ class GildedRose {
                            if(5 < item.sellIn && item.sellIn < 10) item.quality = item.quality + 2;
                            if(0 < item.sellIn && item.sellIn <= 5) item.quality = item.quality + 3;
                            break;
+                        default:
+                            item.quality--;
+                            break;
                     }
                 }
                 //decrementer le SellIn par 1
                 item.sellIn--;
             }
     }
-
-
-
-
-
 
 }
